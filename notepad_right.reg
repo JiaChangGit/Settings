@@ -1,0 +1,225 @@
+Windows Registry Editor Version 5.00
+
+[-HKEY_CLASSES_ROOT\.txt]
+[-HKEY_CLASSES_ROOT\txt_auto_file]
+[HKEY_CLASSES_ROOT\.txt]
+@="txt_auto_file"
+[HKEY_CLASSES_ROOT\.txt\ShellNew]
+"NullFile"=""
+
+[HKEY_CLASSES_ROOT\txt_auto_file]
+@="notepad++"
+[HKEY_CLASSES_ROOT\txt_auto_file\DefaultIcon]
+@="%SystemRoot%\\System32\\imageres.dll,97"
+[HKEY_CLASSES_ROOT\txt_auto_file\shell\open\command]
+@="C:\\Program Files\\Notepad++\\notepad++.exe %1"
+
+
+[-HKEY_CLASSES_ROOT\.backup]
+[-HKEY_CLASSES_ROOT\backup_auto_file]
+[HKEY_CLASSES_ROOT\.backup]
+@="backup_auto_file"
+[HKEY_CLASSES_ROOT\backup_auto_file\DefaultIcon]
+@="%SystemRoot%\\System32\\imageres.dll,97"
+[HKEY_CLASSES_ROOT\backup_auto_file\shell\open\command]
+@="C:\\Program Files\\Notepad++\\notepad++.exe %1"
+
+
+[-HKEY_CLASSES_ROOT\.bak]
+[-HKEY_CLASSES_ROOT\bak_auto_file]
+[HKEY_CLASSES_ROOT\.bak]
+@="bak_auto_file"
+[HKEY_CLASSES_ROOT\bak_auto_file\DefaultIcon]
+@="%SystemRoot%\\System32\\imageres.dll,97"
+[HKEY_CLASSES_ROOT\bak_auto_file\shell\open\command]
+@="C:\\Program Files\\Notepad++\\notepad++.exe %1"
+
+
+[-HKEY_CLASSES_ROOT\.bat]
+[-HKEY_CLASSES_ROOT\bat_auto_file]
+[HKEY_CLASSES_ROOT\.bat]
+@="bat_auto_file"
+[HKEY_CLASSES_ROOT\bat_auto_file\DefaultIcon]
+@="%SystemRoot%\\System32\\imageres.dll,97"
+[HKEY_CLASSES_ROOT\bat_auto_file\shell\open\command]
+@="C:\\Program Files\\Notepad++\\notepad++.exe %1"
+
+
+[-HKEY_CLASSES_ROOT\.cnf]
+[-HKEY_CLASSES_ROOT\cnf_auto_file]
+[HKEY_CLASSES_ROOT\.cnf]
+@="cnf_auto_file"
+[HKEY_CLASSES_ROOT\cnf_auto_file\DefaultIcon]
+@="%SystemRoot%\\System32\\imageres.dll,97"
+[HKEY_CLASSES_ROOT\cnf_auto_file\shell\open\command]
+@="C:\\Program Files\\Notepad++\\notepad++.exe %1"
+
+
+[-HKEY_CLASSES_ROOT\.conf]
+[-HKEY_CLASSES_ROOT\conf_auto_file]
+[HKEY_CLASSES_ROOT\.conf]
+@="conf_auto_file"
+[HKEY_CLASSES_ROOT\conf_auto_file\DefaultIcon]
+@="%SystemRoot%\\System32\\imageres.dll,97"
+[HKEY_CLASSES_ROOT\conf_auto_file\shell\open\command]
+@="C:\\Program Files\\Notepad++\\notepad++.exe %1"
+
+
+[-HKEY_CLASSES_ROOT\.config]
+[-HKEY_CLASSES_ROOT\config_auto_file]
+[HKEY_CLASSES_ROOT\.config]
+@="config_auto_file"
+[HKEY_CLASSES_ROOT\config_auto_file\DefaultIcon]
+@="%SystemRoot%\\System32\\imageres.dll,97"
+[HKEY_CLASSES_ROOT\config_auto_file\shell\open\command]
+@="C:\\Program Files\\Notepad++\\notepad++.exe %1"
+
+
+[-HKEY_CLASSES_ROOT\.css]
+[-HKEY_CLASSES_ROOT\css_auto_file]
+[HKEY_CLASSES_ROOT\.css]
+@="css_auto_file"
+[HKEY_CLASSES_ROOT\css_auto_file\DefaultIcon]
+@="%SystemRoot%\\System32\\imageres.dll,97"
+[HKEY_CLASSES_ROOT\css_auto_file\shell\open\command]
+@="C:\\Program Files\\Notepad++\\notepad++.exe %1"
+
+
+[-HKEY_CLASSES_ROOT\.i]
+[-HKEY_CLASSES_ROOT\i_auto_file]
+[HKEY_CLASSES_ROOT\.i]
+@="i_auto_file"
+[HKEY_CLASSES_ROOT\i_auto_file\DefaultIcon]
+@="%SystemRoot%\\System32\\imageres.dll,97"
+[HKEY_CLASSES_ROOT\i_auto_file\shell\open\command]
+@="C:\\Program Files\\Notepad++\\notepad++.exe %1"
+
+
+[-HKEY_CLASSES_ROOT\.java]
+[-HKEY_CLASSES_ROOT\java_auto_file]
+[HKEY_CLASSES_ROOT\.java]
+@="java_auto_file"
+[HKEY_CLASSES_ROOT\java_auto_file\DefaultIcon]
+@="%SystemRoot%\\System32\\imageres.dll,97"
+[HKEY_CLASSES_ROOT\java_auto_file\shell\open\command]
+@="C:\\Program Files\\Notepad++\\notepad++.exe %1"
+
+
+[-HKEY_CLASSES_ROOT\.js]
+[-HKEY_CLASSES_ROOT\js_auto_file]
+[HKEY_CLASSES_ROOT\.js]
+@="js_auto_file"
+[HKEY_CLASSES_ROOT\js_auto_file\DefaultIcon]
+@="%SystemRoot%\\System32\\imageres.dll,97"
+[HKEY_CLASSES_ROOT\js_auto_file\shell\open\command]
+@="C:\\Program Files\\Notepad++\\notepad++.exe %1"
+
+
+[-HKEY_CLASSES_ROOT\.json]
+[-HKEY_CLASSES_ROOT\json_auto_file]
+[HKEY_CLASSES_ROOT\.json]
+@="json_auto_file"
+[HKEY_CLASSES_ROOT\json_auto_file\DefaultIcon]
+@="%SystemRoot%\\System32\\imageres.dll,97"
+[HKEY_CLASSES_ROOT\json_auto_file\shell\open\command]
+@="C:\\Program Files\\Notepad++\\notepad++.exe %1"
+
+
+[-HKEY_CLASSES_ROOT\.log]
+[-HKEY_CLASSES_ROOT\log_auto_file]
+[HKEY_CLASSES_ROOT\.log]
+@="log_auto_file"
+[HKEY_CLASSES_ROOT\log_auto_file\DefaultIcon]
+@="%SystemRoot%\\System32\\imageres.dll,97"
+[HKEY_CLASSES_ROOT\log_auto_file\shell\open\command]
+@="C:\\Program Files\\Notepad++\\notepad++.exe %1"
+
+
+[-HKEY_CLASSES_ROOT\.out]
+[-HKEY_CLASSES_ROOT\out_auto_file]
+[HKEY_CLASSES_ROOT\.out]
+@="out_auto_file"
+[HKEY_CLASSES_ROOT\out_auto_file\DefaultIcon]
+@="%SystemRoot%\\System32\\imageres.dll,97"
+[HKEY_CLASSES_ROOT\out_auto_file\shell\open\command]
+@="C:\\Program Files\\Notepad++\\notepad++.exe %1"
+
+
+[-HKEY_CLASSES_ROOT\.properties]
+[-HKEY_CLASSES_ROOT\properties_auto_file]
+[HKEY_CLASSES_ROOT\.properties]
+@="properties_auto_file"
+[HKEY_CLASSES_ROOT\properties_auto_file\DefaultIcon]
+@="%SystemRoot%\\System32\\imageres.dll,97"
+[HKEY_CLASSES_ROOT\properties_auto_file\shell\open\command]
+@="C:\\Program Files\\Notepad++\\notepad++.exe %1"
+
+
+[-HKEY_CLASSES_ROOT\.proto]
+[-HKEY_CLASSES_ROOT\proto_auto_file]
+[HKEY_CLASSES_ROOT\.proto]
+@="proto_auto_file"
+[HKEY_CLASSES_ROOT\proto_auto_file\DefaultIcon]
+@="%SystemRoot%\\System32\\imageres.dll,97"
+[HKEY_CLASSES_ROOT\proto_auto_file\shell\open\command]
+@="C:\\Program Files\\Notepad++\\notepad++.exe %1"
+
+
+[-HKEY_CLASSES_ROOT\.py]
+[-HKEY_CLASSES_ROOT\py_auto_file]
+[HKEY_CLASSES_ROOT\.py]
+@="py_auto_file"
+[HKEY_CLASSES_ROOT\py_auto_file\DefaultIcon]
+@="%SystemRoot%\\System32\\imageres.dll,97"
+[HKEY_CLASSES_ROOT\py_auto_file\shell\open\command]
+@="C:\\Program Files\\Notepad++\\notepad++.exe %1"
+
+
+[-HKEY_CLASSES_ROOT\.sh]
+[-HKEY_CLASSES_ROOT\sh_auto_file]
+[HKEY_CLASSES_ROOT\.sh]
+@="sh_auto_file"
+[HKEY_CLASSES_ROOT\sh_auto_file\DefaultIcon]
+@="%SystemRoot%\\System32\\imageres.dll,97"
+[HKEY_CLASSES_ROOT\sh_auto_file\shell\open\command]
+@="C:\\Program Files\\Notepad++\\notepad++.exe %1"
+
+
+[-HKEY_CLASSES_ROOT\.sql]
+[-HKEY_CLASSES_ROOT\sql_auto_file]
+[HKEY_CLASSES_ROOT\.sql]
+@="sql_auto_file"
+[HKEY_CLASSES_ROOT\sql_auto_file\DefaultIcon]
+@="%SystemRoot%\\System32\\imageres.dll,97"
+[HKEY_CLASSES_ROOT\sql_auto_file\shell\open\command]
+@="C:\\Program Files\\Notepad++\\notepad++.exe %1"
+
+
+[-HKEY_CLASSES_ROOT\.wsdl]
+[-HKEY_CLASSES_ROOT\wsdl_auto_file]
+[HKEY_CLASSES_ROOT\.wsdl]
+@="wsdl_auto_file"
+[HKEY_CLASSES_ROOT\wsdl_auto_file\DefaultIcon]
+@="%SystemRoot%\\System32\\imageres.dll,97"
+[HKEY_CLASSES_ROOT\wsdl_auto_file\shell\open\command]
+@="C:\\Program Files\\Notepad++\\notepad++.exe %1"
+
+
+[-HKEY_CLASSES_ROOT\.xml]
+[-HKEY_CLASSES_ROOT\xml_auto_file]
+[HKEY_CLASSES_ROOT\.xml]
+@="xml_auto_file"
+[HKEY_CLASSES_ROOT\xml_auto_file\DefaultIcon]
+@="%SystemRoot%\\System32\\imageres.dll,97"
+[HKEY_CLASSES_ROOT\xml_auto_file\shell\open\command]
+@="C:\\Program Files\\Notepad++\\notepad++.exe %1"
+
+
+[-HKEY_CLASSES_ROOT\.yml]
+[-HKEY_CLASSES_ROOT\yml_auto_file]
+[HKEY_CLASSES_ROOT\.yml]
+@="yml_auto_file"
+[HKEY_CLASSES_ROOT\yml_auto_file\DefaultIcon]
+@="%SystemRoot%\\System32\\imageres.dll,97"
+[HKEY_CLASSES_ROOT\yml_auto_file\shell\open\command]
+@="C:\\Program Files\\Notepad++\\notepad++.exe %1"

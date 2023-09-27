@@ -1,0 +1,221 @@
+{
+    // Removes the useless "breadcrumbs" tree below our tabs
+    //"breadcrumbs.enabled": false,
+    // Add some padding to the top and bottom of our file
+    "editor.padding.bottom": 10,
+    "editor.padding.top": 10,
+    "editor.suggestSelection": "first",
+    "editor.parameterHints.enabled": false,
+    // enable or disable code lense
+    "editor.codeLens": false,
+    // new file using with cpp
+    "files.defaultLanguage": "cpp",
+    // 猜測檔案編碼，解決 VScode 不支援判讀檔案是 ASCII 編碼的問題
+    "files.autoGuessEncoding": true,
+    // close min map
+    "editor.minimap.enabled": false,
+    // Tab 間隔
+    "editor.tabSize": 4,
+    // 字體大小
+    "editor.fontSize": 16,
+    "editor.fontFamily": "'Courier New', 'Fira Code', Menlo, Monaco",
+    "editor.bracketPairColorization.enabled": true,
+    // 字體間距
+    "editor.letterSpacing": 1,
+    // 行高
+    "editor.lineHeight": 26,
+    // 設定一行程式碼長度限制
+    "editor.rulers": [
+        50,
+        100
+    ],
+    // 游標粗細
+    "editor.cursorWidth": 2,
+    // 顯示空白字元
+    "editor.renderWhitespace": "boundary",
+    "editor.guides.indentation": true,
+    "window.titleBarStyle": "custom",
+    "workbench.startupEditor": "none",
+    // 打開VScode取消出現上次關閉的工作區或檔案
+    "window.restoreWindows": "none",
+    // 除存檔案時，自動修正空格
+    "files.trimTrailingWhitespace": true,
+    // 新增一行作為檔案結束
+    "files.insertFinalNewline": true,
+    // terminal
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.scrollback": 1024,
+    // search
+    "search.showLineNumbers": true,
+    "search.smartCase": true,
+    // 啟用自訂程式碼樣版
+    "editor.tabCompletion": "on",
+    "editor.snippetSuggestions": "top",
+    // hide files
+    "files.exclude": {
+        //".idea": true,
+        "**/*.class": true,
+        //"**/.vscode": true,
+        "**/.DS_Store": true,
+        //"**/.git": true,
+        //"**/.svn": true,
+        //"**/.hg": true,
+        //"**/__pycache__": true,
+        "**/*.pyc": true,
+        "node_modules/": true,
+        "templates_module/": true,
+        "**/.project": true,
+        ".mypy_cache/": true,
+        "**/*.exe": true
+        //     "**/.classpath": true,
+        //     "**/.coverage": true,
+        //     "**/.factorypath": true,
+        //     "**/.settings": true,
+    },
+    "search.exclude": {
+        "**/.git": true
+        //"**/node_modules": true
+    },
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell"
+        },
+        "Command Prompt": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "args": [],
+            "icon": "terminal-cmd"
+        },
+        "Git Bash": {
+            "source": "Git Bash",
+            "icon": "github"
+        }
+    },
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    // code runner
+    "code-runner.runInTerminal": true,
+    "code-runner.executorMap": {
+        "javascript": "node",
+        "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+        "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "php": "php",
+        "python": "python -u",
+        "perl": "perl",
+        "perl6": "perl6",
+        "ruby": "ruby",
+        "go": "go run",
+        "lua": "lua",
+        "groovy": "groovy",
+        "powershell": "powershell -ExecutionPolicy ByPass -File",
+        "bat": "cmd /c",
+        "shellscript": "bash",
+        "fsharp": "fsi",
+        "csharp": "cd $dir && dotnet run $fileName",
+        "vbscript": "cscript //Nologo",
+        "typescript": "ts-node",
+        "coffeescript": "coffee",
+        "scala": "scala",
+        "swift": "swift",
+        "julia": "julia",
+        "crystal": "crystal",
+        "ocaml": "ocaml",
+        "r": "Rscript",
+        "applescript": "osascript",
+        "clojure": "lein exec",
+        "haxe": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
+        "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
+        "racket": "racket",
+        "scheme": "csi -script",
+        "ahk": "autohotkey",
+        "autoit": "autoit3",
+        "dart": "dart",
+        "pascal": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+        "d": "cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
+        "haskell": "runhaskell",
+        "nim": "nim compile --verbosity:0 --hints:off --run",
+        "lisp": "sbcl --script",
+        "kit": "kitc --run",
+        "v": "v run",
+        "sass": "sass --style expanded",
+        "scss": "scss --style expanded",
+        "less": "cd $dir && lessc $fileName $fileNameWithoutExt.css",
+        "FortranFreeForm": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "fortran-modern": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "fortran_fixed-form": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "fortran": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "sml": "cd $dir && sml $fileName"
+    },
+    // javascript 跟 erb 要自己加
+    "auto-rename-tag.activationOnLanguage": [
+        "html",
+        "xml",
+        "php",
+        "javascript",
+        "erb"
+    ],
+    // 設定儲存時自動格式化
+    "editor.formatOnSave": true,
+    "[css]": {
+        // CSS文件取消儲存時自動格式化
+        "editor.formatOnSave": false
+    },
+    "[c]": {
+        // 設定預設編碼(cp950 utf8)
+        "files.encoding": "cp950",
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+    "[cpp]": {
+        // 設定預設編碼(cp950 utf8)
+        "files.encoding": "utf8",
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+    "[cc]": {
+        // 設定預設編碼(cp950 utf8)
+        "files.encoding": "utf8",
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+    "[h]": {
+        // 設定預設編碼(cp950 utf8)
+        "files.encoding": "utf8",
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+    "[java]": {
+        // 設定預設編碼(cp950 utf8)
+        "files.encoding": "utf8",
+        "editor.formatOnSave": true,
+    },
+    "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google}",
+    // cmake
+    "cmake.configureOnOpen": true,
+    // gremlins
+    "gremlins.showInProblemPane": true,
+    // project-tree
+    "ProjectTree.loadIgnore": true,
+    "ProjectTree.withComment": true,
+    "ProjectTree.theme": "normal",
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "security.workspace.trust.untrustedFiles": "open",
+    "workbench.colorTheme": "Visual Studio Light",
+    "extensions.ignoreRecommendations": true,
+    // 設定Prettier為格式化程序
+    //"editor.defaultFormatter": "esbenp.prettier-vscode",
+    // 使用單引號
+    //"prettier.singleQuote": true,
+    // 結束是否加分號
+    //"prettier.semi": true,
+    // 縮排空幾格
+    //"prettier.tabWidth": 4,
+    // 設定代碼最佳長度，超過則執行換行
+    //"prettier.printWidth": 48,
+    // 尾隨逗號
+    //"prettier.trailingComma": "es5",
+    // vim
+    //"vim.vimrc.path": "$HOME/.vimrc",
+}
