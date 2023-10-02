@@ -204,6 +204,7 @@
     "security.workspace.trust.untrustedFiles": "open",
     "workbench.colorTheme": "Visual Studio Light",
     "extensions.ignoreRecommendations": true,
+    "editor.guides.bracketPairs": true,
     // 設定Prettier為格式化程序
     //"editor.defaultFormatter": "esbenp.prettier-vscode",
     // 使用單引號
