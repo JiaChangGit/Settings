@@ -8,17 +8,15 @@
     "editor.parameterHints.enabled": false,
     // enable or disable code lense
     "editor.codeLens": false,
-    // new file using with cpp
-    "files.defaultLanguage": "cpp",
-    // 猜測檔案編碼，解決 VScode 不支援判讀檔案是 ASCII 編碼的問題
-    "files.autoGuessEncoding": true,
     // close min map
     "editor.minimap.enabled": false,
+    // 使用滑鼠滾輪並按住 Ctrl 時，縮放編輯器的字型
+    "editor.mouseWheelZoom": true,
     // Tab 間隔
-    "editor.tabSize": 4,
+    "editor.tabSize": 2,
     // 字體大小
     "editor.fontSize": 16,
-    "editor.fontFamily": "'Courier New', 'Fira Code', Menlo, Monaco",
+    "editor.fontFamily": "'Fira Code', Menlo, Monaco,'Courier New'",
     "editor.bracketPairColorization.enabled": true,
     // 字體間距
     "editor.letterSpacing": 1,
@@ -34,23 +32,34 @@
     // 顯示空白字元
     "editor.renderWhitespace": "boundary",
     "editor.guides.indentation": true,
-    "window.titleBarStyle": "custom",
-    "workbench.startupEditor": "none",
-    // 打開VScode取消出現上次關閉的工作區或檔案
-    "window.restoreWindows": "none",
+    // 啟用自訂程式碼樣版
+    "editor.tabCompletion": "on",
+    "editor.snippetSuggestions": "top",
+    // 設定儲存時自動格式化
+    "editor.formatOnSave": true,
+    "editor.guides.bracketPairs": true,
     // 除存檔案時，自動修正空格
     "files.trimTrailingWhitespace": true,
     // 新增一行作為檔案結束
     "files.insertFinalNewline": true,
+    // new file using with cpp
+    "files.defaultLanguage": "cpp",
+    // 猜測檔案編碼，解決 VScode 不支援判讀檔案是 ASCII 編碼的問題
+    "files.autoGuessEncoding": true,
+    // 預設結尾斷行字元.LF使用 \n , CRLF使用\r\n
+    "files.eol": "\n",
+    // 控制檔案與資料夾在總管中的排列順序。除了預設排序外，您也可以將順序設定為 'mixed' (檔案與資料夾)、'type' (依檔案類型)、'modified' (依最後修改日期) 或 'filesFirst' (將檔案排序在資料夾前)。
+    "explorer.sortOrder": "type",
+    "window.titleBarStyle": "custom",
+    "workbench.startupEditor": "none",
+    // 打開VScode取消出現上次關閉的工作區或檔案
+    "window.restoreWindows": "none",
     // terminal
     "terminal.integrated.fontSize": 14,
     "terminal.integrated.scrollback": 1024,
     // search
     "search.showLineNumbers": true,
     "search.smartCase": true,
-    // 啟用自訂程式碼樣版
-    "editor.tabCompletion": "on",
-    "editor.snippetSuggestions": "top",
     // hide files
     "files.exclude": {
         //".idea": true,
@@ -96,6 +105,9 @@
     },
     "terminal.integrated.defaultProfile.windows": "PowerShell",
     // code runner
+    "code-runner.saveAllFilesBeforeRun": true,
+    "code-runner.saveFileBeforeRun": true,
+    "code-runner.clearPreviousOutput": true,
     "code-runner.runInTerminal": true,
     "code-runner.executorMap": {
         "javascript": "node",
@@ -158,15 +170,13 @@
         "javascript",
         "erb"
     ],
-    // 設定儲存時自動格式化
-    "editor.formatOnSave": true,
     "[css]": {
         // CSS文件取消儲存時自動格式化
         "editor.formatOnSave": false
     },
     "[c]": {
         // 設定預設編碼(cp950 utf8)
-        "files.encoding": "cp950",
+        "files.encoding": "utf8",
         "editor.defaultFormatter": "ms-vscode.cpptools"
     },
     "[cpp]": {
@@ -187,24 +197,80 @@
     "[java]": {
         // 設定預設編碼(cp950 utf8)
         "files.encoding": "utf8",
-        "editor.formatOnSave": true,
     },
-    "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google}",
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.python",
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    // jsonc是有注释的json
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
     // cmake
-    "cmake.configureOnOpen": true,
+    "cmake.buildDirectory": "${workspaceFolder}/build/${buildType}",
+    "cmake.configureSettings": {
+        "CMAKE_TOOLCHAIN_FILE": "C:/dev/vcpkg/scripts/buildsystems/vcpkg.cmake",
+        "VCPKG_TARGET_TRIPLET": "x64-windows",
+    },
     // gremlins
     "gremlins.showInProblemPane": true,
     // project-tree
     "ProjectTree.loadIgnore": true,
     "ProjectTree.withComment": true,
-    "ProjectTree.theme": "normal",
-    "[python]": {
-        "editor.formatOnType": true
-    },
+    "ProjectTree.useDefaultIgnore": true,
+    "ProjectTree.theme": "perfect",
     "security.workspace.trust.untrustedFiles": "open",
     "workbench.colorTheme": "Visual Studio Light",
     "extensions.ignoreRecommendations": true,
-    "editor.guides.bracketPairs": true,
+    // Doxygen documentation generator set
+    // 文件注释：版权信息模板
+    "doxdocgen.file.copyrightTag": [
+        "@copyright Copyright (c) {year}  JIA-CHANG"
+    ],
+    // 文件注释：自定义模块，这里我添加一个修改日志
+    "doxdocgen.file.customTag": [
+        "@par fix dialog:",
+        "<table>",
+        "<tr><th>Date       <th>Version <th>Author  <th>Description",
+        "<tr><td>{date} <td>1.0     <td>wangh     <td>content",
+        "</table>",
+    ],
+    // 文件注释的组成及其排序
+    "doxdocgen.file.fileOrder": [
+        "file",
+        "brief",
+        "author",
+        "version",
+        "date",
+        "empty",
+        "copyright",
+        "empty",
+        "custom"
+    ],
+    // 下面时设置上面标签tag的具体信息
+    "doxdocgen.file.fileTemplate": "@file {name}",
+    "doxdocgen.file.versionTag": "@version 1.0",
+    "doxdocgen.generic.authorEmail": "jiachanggit@gmail.com",
+    "doxdocgen.generic.authorName": "jiachang",
+    "doxdocgen.generic.authorTag": "@author {author} ({email})",
+    // 日期格式与模板
+    "doxdocgen.generic.dateFormat": "YYYY-MM-DD",
+    "doxdocgen.generic.dateTemplate": "@date {date}",
+    // 根据自动生成的注释模板（目前主要体现在函数注释上）
+    "doxdocgen.generic.order": [
+        "brief",
+        "tparam",
+        "param",
+        "return"
+    ],
+    "doxdocgen.generic.paramTemplate": "@param{indent:8}{param}{indent:25}My Param doc",
+    "doxdocgen.generic.returnTemplate": "@return {type} ",
+    "doxdocgen.generic.splitCasingSmartText": true,
+    // pyqt 設定
+    //"pyqt-integration.pyuic.cmd": "C:\\Users\\louis\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\pyuic5.exe",
+    //"pyqt-integration.qtdesigner.path": "C:\\Users\\louis\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\qt5_applications\\Qt\\bin\\designer.exe",
     // 設定Prettier為格式化程序
     //"editor.defaultFormatter": "esbenp.prettier-vscode",
     // 使用單引號
