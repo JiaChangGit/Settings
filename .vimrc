@@ -71,45 +71,6 @@ highlight clear SpellLocal
 highlight SpellLocal term=underline cterm=underline
 
 
-" JSON 文字格式化 
-command! JSONFormat :execute '%!python -m json.tool'
-\ | :execute '%!python -c "import re,sys;chr=__builtins__.__dict__.get(\"unichr\", chr);sys.stdout.write(re.sub(r\"\\\\u[0-9a-f]{4}\", lambda x: chr(int(\"0x\" + x.group(0)[2:], 16)).encode(\"utf-8\"), sys.stdin.read()))"'
-\ | :set ft=javascript
-\ | :1
-
-" XML 文字格式化
-command! XMLFormat :execute '%!xmllint --format -'
-
-
-" 快捷鍵配置
-inoremap ;; <ESC>
-" 在插入模式下，分號兩下指令、非遞歸狀態，映射為按鍵 
-" 如此，就有三種退回普通模式的方法 :
-" 左手 - ESC
-" 右手 - ; ;
-" 雙手 - Ctrl + [
-
-
-" 執行程式
-nmap <F5> :call CompileRun()<CR>
-" 普通模式下，F5 按鍵 執行 CompileRun 涵式。
-" 此函式會先存檔，然後根據副檔名的不同，使用終端機的指令執行這個檔案。
-" (主要運用在 Python 的執行快捷鍵)
-
-func! CompileRun()
-        exec "w"
-if &filetype == 'python'
-            exec "!time python3 %"
-elseif &filetype == 'java'
-            exec "!javac %"
-            exec "!time java %<"
-elseif &filetype == 'sh'
-            :!time bash %
-endif
-    endfunc
-
-
-
 
 
 " 常用的文字替代

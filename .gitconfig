@@ -1,0 +1,26 @@
+[user]
+	name = Jia-Chang, Chang
+	email = jiachanggit@gmail.com
+[core]
+	quotepath = off
+	autocrlf = true
+	safecrlf = false
+	editor = vim
+[http]
+	postBuffer = 524288000
+	lowSpeedLimit = 0
+	lowSpeedTime = 999999
+	version = HTTP/1.1
+[alias]
+	adog = log --all --decorate --oneline --graph
+	co = checkout
+	ci = commit
+	st = status
+	br = branch
+[difftool "sourcetree"]
+	cmd = '' \"$LOCAL\" \"$REMOTE\"
+[mergetool "sourcetree"]
+	cmd = "'' "
+	trustExitCode = true
+[commit]
+	template = ~/.stCommitMsg

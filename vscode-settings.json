@@ -12,6 +12,7 @@
     "editor.minimap.enabled": false,
     // 使用滑鼠滾輪並按住 Ctrl 時，縮放編輯器的字型
     "editor.mouseWheelZoom": true,
+    "workbench.colorTheme": "Visual Studio Light",
     // Tab 間隔
     "editor.tabSize": 2,
     // 字體大小
@@ -54,8 +55,6 @@
     "workbench.startupEditor": "none",
     // 打開VScode取消出現上次關閉的工作區或檔案
     "window.restoreWindows": "none",
-    // terminal
-    "terminal.integrated.fontSize": 14,
     "terminal.integrated.scrollback": 1024,
     // search
     "search.showLineNumbers": true,
@@ -211,8 +210,9 @@
     // cmake
     "cmake.buildDirectory": "${workspaceFolder}/build/${buildType}",
     "cmake.configureSettings": {
-        "CMAKE_TOOLCHAIN_FILE": "C:/dev/vcpkg/scripts/buildsystems/vcpkg.cmake",
-        "VCPKG_TARGET_TRIPLET": "x64-windows",
+        "CMAKE_TOOLCHAIN_FILE": "/vcpkg/scripts/buildsystems/vcpkg.cmake",
+        // "VCPKG_TARGET_TRIPLET": "x64-linux",
+        // "VCPKG_TARGET_TRIPLET": "x64-windows",
     },
     // gremlins
     "gremlins.showInProblemPane": true,
@@ -222,7 +222,7 @@
     "ProjectTree.useDefaultIgnore": true,
     "ProjectTree.theme": "perfect",
     "security.workspace.trust.untrustedFiles": "open",
-    "workbench.colorTheme": "Visual Studio Light",
+    "python.defaultInterpreterPath": "C:\\Users\\louis\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
     "extensions.ignoreRecommendations": true,
     // Doxygen documentation generator set
     // 文件注释：版权信息模板
@@ -234,7 +234,7 @@
         "@par fix dialog:",
         "<table>",
         "<tr><th>Date       <th>Version <th>Author  <th>Description",
-        "<tr><td>{date} <td>1.0     <td>wangh     <td>content",
+        "<tr><td>{date} <td>1.0     <td>test     <td>content",
         "</table>",
     ],
     // 文件注释的组成及其排序
@@ -268,6 +268,7 @@
     "doxdocgen.generic.paramTemplate": "@param{indent:8}{param}{indent:25}My Param doc",
     "doxdocgen.generic.returnTemplate": "@return {type} ",
     "doxdocgen.generic.splitCasingSmartText": true,
+    "cmake.configureOnOpen": true,
     // pyqt 設定
     //"pyqt-integration.pyuic.cmd": "C:\\Users\\louis\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\pyuic5.exe",
     //"pyqt-integration.qtdesigner.path": "C:\\Users\\louis\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\qt5_applications\\Qt\\bin\\designer.exe",
