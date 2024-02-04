@@ -214,6 +214,9 @@
         // "VCPKG_TARGET_TRIPLET": "x64-linux",
         // "VCPKG_TARGET_TRIPLET": "x64-windows",
     },
+    "cmake.configureOnOpen": true,
+    "cmake.options.statusBarVisibility": "visible",
+    "cmake.showOptionsMovedNotification": false,
     // gremlins
     "gremlins.showInProblemPane": true,
     // project-tree
@@ -231,10 +234,10 @@
     ],
     // 文件注释：自定义模块，这里我添加一个修改日志
     "doxdocgen.file.customTag": [
-        "@par fix dialog:",
+        "@par dialog:",
         "<table>",
         "<tr><th>Date       <th>Version <th>Author  <th>Description",
-        "<tr><td>{date} <td>1.0     <td>test     <td>content",
+        "<tr><td>{date} <td>1.0     <td>jiachang     <td>description",
         "</table>",
     ],
     // 文件注释的组成及其排序
@@ -268,7 +271,6 @@
     "doxdocgen.generic.paramTemplate": "@param{indent:8}{param}{indent:25}My Param doc",
     "doxdocgen.generic.returnTemplate": "@return {type} ",
     "doxdocgen.generic.splitCasingSmartText": true,
-    "cmake.configureOnOpen": true,
     // pyqt 設定
     //"pyqt-integration.pyuic.cmd": "C:\\Users\\louis\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\pyuic5.exe",
     //"pyqt-integration.qtdesigner.path": "C:\\Users\\louis\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\qt5_applications\\Qt\\bin\\designer.exe",
