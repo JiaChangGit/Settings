@@ -38,6 +38,7 @@
     "editor.snippetSuggestions": "top",
     // 設定儲存時自動格式化
     "editor.formatOnSave": true,
+    "C_Cpp.clang_format_fallbackStyle": "{BasedOnStyle: Google}",
     "editor.guides.bracketPairs": true,
     // 除存檔案時，自動修正空格
     "files.trimTrailingWhitespace": true,
@@ -169,29 +170,27 @@
         "javascript",
         "erb"
     ],
+
+    // 在 HTML 貼上 <pre> 區段時，這個設定會導致 <pre> 標籤內的內容也被自動縮排，導致格式亂掉。
+    // 建議關閉 HTML 的自動縮排功能。
+    "[html]": {
+        "editor.autoIndent": "none"
+    },
     "[css]": {
-        // CSS文件取消儲存時自動格式化
+        // 取消儲存時自動格式化
         "editor.formatOnSave": false
     },
     "[c]": {
-        // 設定預設編碼(cp950 utf8)
-        "files.encoding": "utf8",
-        "editor.defaultFormatter": "ms-vscode.cpptools"
+        "files.encoding": "utf8"
     },
     "[cpp]": {
-        // 設定預設編碼(cp950 utf8)
-        "files.encoding": "utf8",
-        "editor.defaultFormatter": "ms-vscode.cpptools"
+        "files.encoding": "utf8"
     },
     "[cc]": {
-        // 設定預設編碼(cp950 utf8)
-        "files.encoding": "utf8",
-        "editor.defaultFormatter": "ms-vscode.cpptools"
+        "files.encoding": "utf8"
     },
     "[h]": {
-        // 設定預設編碼(cp950 utf8)
-        "files.encoding": "utf8",
-        "editor.defaultFormatter": "ms-vscode.cpptools"
+        "files.encoding": "utf8"
     },
     "[java]": {
         // 設定預設編碼(cp950 utf8)
@@ -201,11 +200,13 @@
         "editor.defaultFormatter": "ms-python.python",
     },
     "[json]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
+        // 取消儲存時自動格式化
+        "editor.formatOnSave": false
     },
     // jsonc是有注释的json
     "[jsonc]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
+        // 取消儲存時自動格式化
+        "editor.formatOnSave": false
     },
     // cmake
     "cmake.buildDirectory": "${workspaceFolder}/build/${buildType}",
@@ -271,6 +272,8 @@
     "doxdocgen.generic.paramTemplate": "@param{indent:8}{param}{indent:25}My Param doc",
     "doxdocgen.generic.returnTemplate": "@return {type} ",
     "doxdocgen.generic.splitCasingSmartText": true,
+    "search.followSymlinks": false,
+    // "git.autorefresh": false,
     // pyqt 設定
     //"pyqt-integration.pyuic.cmd": "C:\\Users\\louis\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\pyuic5.exe",
     //"pyqt-integration.qtdesigner.path": "C:\\Users\\louis\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\qt5_applications\\Qt\\bin\\designer.exe",
